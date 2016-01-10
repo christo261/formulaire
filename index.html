@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style1.css" />
+		<title>Formulaire d"inscription</title>
+	</head>
+<body>
+	<form method="post" action="traitement.php">
+		<fieldset>
+			<legend>Bonjour et bienvenue sur notre site. Pour vous inscrire, remplissez les champs ci-dessous.</legend><!--titre du fieldset-->
+				
+				<label for="nom">votre nom :</label>
+				<input type="text" name="nom" size="40" id="nom"/><br />
+				
+				<label for="prénom">votre prénom :</label>
+				<input type="text" name="prénom" size="40" id="prénom" /><br />
+				
+				<label for="nom">votre e-mail :</label>
+				<input type="text" name="email" size="40" id="email" /><br />
+				
+				<label for="nom">entrez votre pseudo :</label>
+				<input type="text" name="pseudo" size="40" id="pseudo" /><br />
+				
+				<label for="nom">entrez votre mot de passe :</label>
+				<input type="password" name="mp" size="15" id="mp" /><br />
+				
+				<label for="presentation">Présentez vous ici en quelques mots si vous voulez :</label><br/>
+				<textarea name="présentation" rows=5 cols=40>
+				
+				</textarea>
+				
+				   
+		</fieldset>
+		<input type="submit" value="envoyer" />
+	</form>
+</body>
+</html>
