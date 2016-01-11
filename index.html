@@ -1,43 +1,93 @@
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style1.css" />
 		<title>Formulaire d'inscription</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		<style type="text/css">
-		    body {
+		  body {
 				background:url('images/fond_bleu.png');
 				}
+		  legend{
+		     text-align:center;
+			 }
+		  
 		</style>
 	</head>
 <body>
-	<form method="post" action="traitement.php">
+  <div class="container">
+	<form class="form-horizontal col-lg-12" method="post" action="traitement.php">
 		<fieldset>
-			<legend>Bonjour et bienvenue sur notre site. Pour vous inscrire, remplissez les champs ci-dessous.</legend><!--titre du fieldset-->
-				
-				<label for="nom">votre nom :</label>
-				<input type="text" name="nom" size="40" id="nom" required/><br />
-				
-				<label for="prénom">votre prénom :</label>
-				<input type="text" name="prénom" size="40" id="prénom" required/><br />
-				
-				<label for="nom">votre e-mail :</label>
-				<input type="email" name="email" size="40" id="email" required/><br />
-				
-				<label for="nom">entrez votre pseudo :</label>
-				<input type="text" name="pseudo" size="40" id="pseudo" required/><br />
-				
-				<label for="nom">entrez votre mot de passe :</label>
-				<input type="password" name="mp" size="15" id="mp" required/><br />
-				
-				<label for="presentation">Présentez vous ici en quelques mots si vous voulez :</label><br/>
-				<textarea name="présentation" rows=5 cols=40>
-				
-				</textarea>
-				
+			<div class="form-group">
+				<legend>Bonjour et bienvenue sur notre site. Pour vous inscrire, remplissez les champs ci-dessous.</legend>
+			</div>
+			
+			
+			<div class="row">
+				<div class="form-group">
+					<label for="text" class="col-lg-2 control-label">votre nom :</label>
+					<div class="col-lg-4">
+						<input type="text" class="form-control" name="nom"  id="text" required autofocus/>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">	
+				<div class="form-group">
+					<label for="text" class="col-lg-2 control-label">votre prénom :</label>
+					<div class="col-lg-4">
+						<input type="text" class="form-control" name="prénom" id="text" required/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">	
+				<div class="form-group">
+					<label for="text" class="col-lg-2 control-label">votre e-mail :</label>
+					<div class="col-lg-4">
+						<input  type="email" class="form-control" name="email"  id="text" required/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group">
+					<label for="text" class="col-lg-2 control-label">votre pseudo :</label>
+					<div class="col-lg-4">
+						<input type="text" class="form-control" name="pseudo"  id="text" required/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group">
+					<label for="text" class="col-lg-2 control-label">votre mot de passe :</label>
+					<div class="col-lg-4">
+						<input type="password" class="form-control" name="mp"  id="mp" required />
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group">
+					<label for="text" class="col-lg-2 control-label">Présentez vous ici en quelques mots si vous voulez :</label>
+					<div class="col-lg-4">
+						<textarea id="textarea" class="form-control" rows=5>
+						</textarea>
+					</div>
+				</div>
+			</div>	
 				   
 		</fieldset>
-		<input type="submit" value="envoyer" onSubmit="return MyFonction()"/>
+		<div class="row">
+			<div class="col-lg-offset-3 col-lg-2">
+				<input class="btn btn-danger" type="submit" value="envoyer" />
+			</div>
+		</div>
 	</form>
-	
+</div>
 </body>
 </html>
